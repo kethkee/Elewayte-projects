@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('HR analytics - Sheet1.csv')
+df = pd.read_csv('/HR analytics - Sheet1.csv')
 df.columns = df.columns.str.strip()
 print(df.head())
 
