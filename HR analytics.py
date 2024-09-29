@@ -14,7 +14,7 @@ gender_location = df.groupby('Loc')['Gender'].value_counts()
 print(gender_department)
 print(gender_location)
 
-# Clean the Salary column
+
 df['Salary'] = df['Salary'].replace({'\$': '', ',': ''}, regex=True).str.strip()
 df['Salary'] = pd.to_numeric(df['Salary'], errors='coerce')
 
